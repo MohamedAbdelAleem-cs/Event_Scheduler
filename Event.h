@@ -23,5 +23,7 @@ public:
     bool isDone;
     Event();
     Event(string n, date sd, date ed, date rd, string p);
+    Event(string n, date sd, date ed, date rd, string p, bool d);
     void Display();
+    Event Update();
 };

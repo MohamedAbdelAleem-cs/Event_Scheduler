@@ -25,5 +25,6 @@ public:
     T At(int);
     void Append(T);
     void DeleteAt(int pos);
+    void Update(int pos, T newVal);
     ~LinkedList(void);
 };

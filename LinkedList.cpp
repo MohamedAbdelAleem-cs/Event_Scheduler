@@ -75,6 +75,16 @@ T LinkedList<T>::At(int pos)
 }
 
 template <class T>
+void LinkedList<T>::Update(int pos, T newVal)
+{
+    assert(pos >= 0 && pos < count);
+    Node<T> *tmp = head;
+    for (int i = 0; i < pos; i++)
+        tmp = tmp->next;
+    tmp->value = newVal;
+}
+
+template <class T>
 LinkedList<T>::~LinkedList(void)
 {
 }
