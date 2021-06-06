@@ -117,7 +117,7 @@ int main()
             }
             EventsFile.close();
             cout << "***************************" << endl;
-            cout << "Saved Successfully";
+            cout << "Saved Successfully"<< endl;
             break;
         }
         case 7:
